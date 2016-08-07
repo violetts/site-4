@@ -1,0 +1,30 @@
+.description {
+    
+    
+    &__title {
+        text-transform: uppercase;
+        display: block;
+        
+        $font-size: 25px;
+        font-size: $font-size;
+        margin: #{14px/$font-size}em 0;
+    }
+    
+    &__list {
+        text-align: justify;
+        padding: 0;
+    }
+    
+    &__list:after {
+        content: '';
+        display: inline-block;
+        width: 100%;
+    }
+    
+    &__column {
+        width: 50%;
+        display: inline-block;
+        margin: 5px 0 0;
+        
+    }
+}

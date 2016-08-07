@@ -1,0 +1,36 @@
+.page {
+    font-family: 'Myriad Pro Regular', sans-serif;
+    $font-size: 15px;
+    font-size: $font-size;
+    
+    line-height: #{20px/$font-size};
+    
+    
+}
+
+h1,
+h2,
+h3,
+h4 {
+    margin: 0;
+    padding: 0;
+}
+
+ h2 {
+     font-weight: 400;   
+     font-size: 25px;
+     margin: 0;
+    }
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    $font-size: 15px;
+    font-size: $font-size;
+    
+    margin: #{$font-size/25px}em 0;
+}
+

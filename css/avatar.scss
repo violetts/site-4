@@ -1,0 +1,47 @@
+.avatar {
+    padding: 100% 0 0;
+    background-color: #3d6cb0;
+    border-radius: 50%;
+    
+    
+    &__wrapper {
+        width: 18.161290322580644%;
+        border-radius: 50%;
+        padding: 5px;
+        border: 1px solid #3d6cb0;
+        position: relative;
+        box-sizing: border-box;
+        display: inline-block;
+        vertical-align: middle;
+        margin: 0 5px 0 0;
+        
+        &_big {
+            height: 61.82795698924731%;
+            width: 61.82795698924731%;
+            margin: 0 auto 40px;
+            border-radius: 50%;
+            padding: 12px;
+            border: 1px solid #3d6cb0;
+            position: relative;
+            box-sizing: border-box;
+        }
+        
+        &_reg {
+             max-width: 77.88px;
+        }
+    }
+    
+    &__inner {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+    &__icon {
+        color: #fff;
+        font-size: 35px;
+    }
+}
+
+

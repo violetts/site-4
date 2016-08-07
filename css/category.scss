@@ -1,0 +1,10 @@
+.category {
+    
+    &:after {
+        content: '';
+        position: relative;
+        display: block;
+        border-bottom: 5px solid #3d6cb0;
+        top: -40px;
+    }
+}

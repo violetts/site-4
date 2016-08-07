@@ -1,0 +1,27 @@
+.title {
+    text-transform: uppercase;
+
+
+    &_level_1x {
+        color: #3d6cb0;
+        $font-size: 41px;
+        display: inline;
+        vertical-align: middle;
+
+        font-size: $font-size;
+        margin: 0 0 #{$font-size/2} 0;
+    }
+
+    &_level_2x {
+        color: #3d6cb0;
+        font-weight: 600;
+        $font-size: 25px;
+
+        font-size: $font-size;
+        margin: 0 0 #{$font-size/2} 0;
+    }
+    
+    &_level_3x{
+        font-weight: 400;
+    }
+}    
