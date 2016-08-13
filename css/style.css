@@ -627,7 +627,6 @@ textarea {
 
 .level {
   display: inline-block;
-  background-color: #e6e6e6;
   box-sizing: border-box;
   position: relative;
   background-color: #e6e6e6;
@@ -650,10 +649,11 @@ textarea {
   background-color: #3d6cb0;
 }
 
-.category:after {
-  content: '';
+.category__decoration {
+  background-color: #3d6cb0;
+  display: inline-block;
+  width: 31%;
+  height: 5px;
   position: relative;
-  display: block;
-  border-bottom: 5px solid #3d6cb0;
-  top: -40px;
+  top: -11px;
 }
