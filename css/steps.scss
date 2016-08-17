@@ -1,0 +1,54 @@
+.steps {
+    padding: 0 0 0 60px;
+    position: relative;
+    
+     &::before {
+        content:'';
+        width: 18px;
+        height: 18px;
+        border-radius: 50%;
+        background-color: #333;
+        position: absolute;
+        top: 8px;
+        left: 24px;
+    }
+    
+    & + & {
+        margin-top: 22px;
+    }
+    
+    &__header {
+        display: inline-block;
+        font-size: 25px;
+        position: relative;
+    }
+    
+    &__title {
+        color: #3d6cb0;
+        text-transform: uppercase;
+        font-weight: 600;
+        display: inline-block;
+        
+        &_smaller {
+            font-size: 25px;
+            color: #333;
+        }
+    }
+    
+    &__date-from:before {
+        content: '//';
+        display: inline-block;
+        padding: 0 10px 0 0;
+    }
+    
+    &__what {
+        font-weight: 400;
+        text-transform: uppercase;
+    }
+    
+    &__date-to,
+    &__date-from,
+    &__what {
+        display: inline-block;
+    }
+}

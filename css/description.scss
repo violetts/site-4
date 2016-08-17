@@ -1,14 +1,4 @@
 .description {
-    
-    &__title {
-        text-transform: uppercase;
-        display: block;
-        
-        $font-size: 25px;
-        font-size: $font-size;
-        margin: #{14px/$font-size}em 0;
-    }
-    
     &__list {
         text-align: justify;
         padding: 0;
@@ -21,9 +11,11 @@
     }
     
     &__column {
-        width: 50%;
+        width: 45%;
         display: inline-block;
-        margin: 5px 0 0;
         
+        & + & {
+            margin-left: 10%;
+        }
     }
 }

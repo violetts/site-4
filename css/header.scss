@@ -1,0 +1,69 @@
+.header {
+    position: relative;
+    overflow: hidden;
+
+    &_top {
+        text-align: center;
+        
+        &:after {
+            display: none;
+        }
+    }
+        
+    &__title {
+        text-transform: uppercase;
+        color: #3d6cb0;
+        display: inline;
+        vertical-align: middle;
+        font-weight: 600;
+        font-size: 41px;
+        margin: 0 0 20.5px 0;
+        padding: 0 10px 0 0;
+        
+        
+        &_bigger {
+            color: #000;
+            font-weight: 600;
+            
+            $font-size: 62px;
+            font-size: $font-size;
+            margin: 0;
+            padding: 0;
+        }
+        
+        &_huge {
+            color: #000;
+            font-weight: normal; 
+            
+            $font-size: 53px;
+            font-size: $font-size;
+            margin: 0;
+            line-height: #{55px/$font-size};
+            padding: 0;
+        }
+    }
+    
+    &__subtitle {
+        text-transform: uppercase;
+        color: #000;
+        font-weight: 600;
+        $font-size: 25px;
+        font-size: $font-size;
+        margin: 0 0 #{20px/$font-size}em 0;
+        line-height: #{40px/$font-size};
+    }
+    
+    &::after {
+        content: '';
+        width: 100%;
+        height: 5.5px;
+        background: #3d6cb0;
+        position: absolute;
+        top: 33px;
+        z-index: -1;
+    }
+}
+
+
+
+

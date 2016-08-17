@@ -1,16 +1,13 @@
 .column {
-    display: inline-block;
-    vertical-align: top;
-    padding: 0 10px;
-    box-sizing: border-box;
     
     &_left {
-        width: 40%;
-        margin-right: 7.575757575757576%;
+        float: left;
+        width: 36.89%;
     }
     
     &_right {
-        width: 52%;
+        float: right;
+        width: 56.59%;
     }
 }
 
