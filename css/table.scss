@@ -1,7 +1,12 @@
 .table {
+    
+    &__section {
+        padding: 5.324183625177473% 0; //18px
+    }
 
     &__title {
         font-size: 20px;
+        width: 120px;
         color: #3d6cb0;
         text-transform: uppercase;
         font-weight: 600;
@@ -12,6 +17,5 @@
         font-size: 20px;
         color: #000;
         display: inline-block;
-        padding: 20px;
     }
 }

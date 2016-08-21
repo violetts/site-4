@@ -1,5 +1,5 @@
 .steps {
-    padding: 0 0 0 60px;
+    padding: 0 0 0 9.449711783790594%;
     position: relative;
     
      &::before {
@@ -46,8 +46,14 @@
         text-transform: uppercase;
     }
     
-    &__date-to,
-    &__date-from,
+    &__date-to {
+        display: inline-block;
+    }
+    
+    &__date-from {
+        display: inline-block;
+    }
+    
     &__what {
         display: inline-block;
     }

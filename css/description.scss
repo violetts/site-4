@@ -9,13 +9,4 @@
         display: inline-block;
         width: 100%;
     }
-    
-    &__column {
-        width: 45%;
-        display: inline-block;
-        
-        & + & {
-            margin-left: 10%;
-        }
-    }
 }

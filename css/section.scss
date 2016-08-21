@@ -3,29 +3,66 @@
     
     &__header {
         margin: 0 0 20px;
-    }
-    
-    &__description {
+        position: relative;
+        overflow: hidden;
         
-        &_center {
-            text-align: center;
-        }
-        
-        &_list {
-            padding: 0 0 0 60px;
-            position: relative;
-            
-            &:before {
-                content: '';
-                width: 18px;
-                height: 18px;
-                border-radius: 50%;
-                background-color: #333;
-                position: absolute;
-                box-sizing: border-box;
-                display: inline-block;
-                transform: translate(-200%, 40%);
+        &_top {
+            &:after {
+            display: none;
             }
         }
+        
+         &::after {
+            content: '';
+            width: 100%;
+            height: 6px;
+            background: #3d6cb0;
+            position: absolute;
+            top: calc(50% - 3px);
+            z-index: -1;
+            left: 87.88px; 
+        }
+    }
+    
+     &__title {
+        text-transform: uppercase;
+        color: #3d6cb0;
+        display: inline;
+        vertical-align: middle;
+        font-weight: 600;
+        font-size: 41px;
+        padding: 0 2.95% 0 0; //10px
+        background: #fff; 
+        
+        &_bigger {
+            color: #000;
+            font-weight: 600;
+            
+            $font-size: 62px;
+            font-size: $font-size;
+            margin: 0;
+            padding: 0;
+        }
+        
+        &_huge {
+            color: #000;
+            font-weight: normal; 
+            
+            $font-size: 53px;
+            font-size: $font-size;
+            margin: 0;
+            line-height: #{55px/$font-size};
+            padding: 0;
+        }
+         
+         &__subtitle {
+            text-transform: uppercase;
+            color: #000;
+            font-weight: 600;
+            $font-size: 25px;
+            font-size: $font-size;
+            margin: 0 0 #{20px/$font-size}em 0;
+            line-height: #{40px/$font-size};
+        } 
     }
 }

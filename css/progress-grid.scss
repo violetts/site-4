@@ -1,0 +1,11 @@
+.progress-grid {
+    
+     &__item {
+        width: 44%;
+        display: inline-block;
+        
+        & + & {
+            margin-left: 10%;
+        }
+    }
+}

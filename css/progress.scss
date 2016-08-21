@@ -3,6 +3,7 @@
      &__title {
         text-transform: uppercase;
         display: block;
+        text-align: center;
         font-weight: 400;
         
         $font-size: 25px;
@@ -12,6 +13,7 @@
     
     &__items {
         text-align: justify;
+        //white-space: nowrap;
         
         &:after {
             content: '';
@@ -28,7 +30,6 @@
         width: 18px;
         height: 18px;
         border-radius: 50%;
-        margin: 0 5px 0 0;
     }
     
     &__item_active ~ &__item {

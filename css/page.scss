@@ -1,0 +1,25 @@
+.page {
+    max-width: 1122px;
+    min-width: 960px;
+    margin: 0 auto;
+    padding: 6.68% 0; // 75px;
+    
+    &__header {
+        width: 36.89%;
+        float: left;
+        text-align: center;
+    }
+    
+    &__left {
+        width: 36.89%;
+        padding: 0 3.3792155714253536%; //15px
+        box-sizing: border-box;
+        float: left;
+    }
+
+    &__right {
+        float: right;
+        padding: 0 2.2558426324179623%; //15px;
+        width: 56.59%;
+    }
+}
