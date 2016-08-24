@@ -1,6 +1,6 @@
 .avatar {
     
-    &__bigger {
+    &__wrapper {
         border: 1px solid #3d6cb0;
         border-radius: 50%;
         box-sizing: border-box;
@@ -16,28 +16,6 @@
         width: 203px;
         height: 203px;
         padding: 2.955665024630542% //12px;
-    }
-    
-    &__smaller {
-        border: 1px solid #3d6cb0;
-        width: 77.88px;
-        height: 77.88px;
-        border-radius: 50%;
-        box-sizing: border-box;
-        display: inline-block;
-        vertical-align: middle;
-        background: #3d6cb0; 
-        background-clip: content-box;
-        padding: 5px;
-        position: relative;
-        overflow: hidden;
-        text-align: center;
-    }
-    
-    &__icon {
-        color: #fff;
-        font-size: 35px;
-        transform: translate(0%, 45%);
     }
     
     &__img {

@@ -10,7 +10,7 @@
         background-color: #333;
         position: absolute;
         top: 8px;
-        left: 24px;
+        left: 3.7798847135162372%;
     }
     
     & + & {
@@ -38,7 +38,7 @@
     &__date-from:before {
         content: '//';
         display: inline-block;
-        padding: 0 10px 0 0;
+        padding: 0 10px 0 15px;
     }
     
     &__what {
@@ -51,10 +51,6 @@
     }
     
     &__date-from {
-        display: inline-block;
-    }
-    
-    &__what {
         display: inline-block;
     }
 }

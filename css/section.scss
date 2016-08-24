@@ -2,7 +2,7 @@
     padding: 30px 0;
     
     &__header {
-        margin: 0 0 20px;
+        margin: 0 0 20px -14px;
         position: relative;
         overflow: hidden;
         
@@ -16,53 +16,56 @@
             content: '';
             width: 100%;
             height: 6px;
-            background: #3d6cb0;
+            background: $blue;
             position: absolute;
             top: calc(50% - 3px);
             z-index: -1;
-            left: 87.88px; 
+            left: 87px; 
         }
     }
     
      &__title {
         text-transform: uppercase;
-        color: #3d6cb0;
+        color: $blue;
         display: inline;
         vertical-align: middle;
         font-weight: 600;
         font-size: 41px;
-        padding: 0 2.95% 0 0; //10px
+        padding: 0 2.95% 0 2%;
         background: #fff; 
-        
-        &_bigger {
-            color: #000;
-            font-weight: 600;
-            
-            $font-size: 62px;
-            font-size: $font-size;
-            margin: 0;
-            padding: 0;
-        }
-        
-        &_huge {
-            color: #000;
-            font-weight: normal; 
-            
-            $font-size: 53px;
-            font-size: $font-size;
-            margin: 0;
-            line-height: #{55px/$font-size};
-            padding: 0;
-        }
          
-         &__subtitle {
-            text-transform: uppercase;
-            color: #000;
-            font-weight: 600;
-            $font-size: 25px;
-            font-size: $font-size;
-            margin: 0 0 #{20px/$font-size}em 0;
-            line-height: #{40px/$font-size};
-        } 
     }
+    
+    &__description {
+        p {
+            margin: 0;
+
+            & + & {
+                margin-top: 1em;
+            }
+        }
+    }
+    
+     &__avatar {
+        border: 1px solid $blue;
+        width: 78px;
+        height: 78px;
+        border-radius: 50%;
+        box-sizing: border-box;
+        display: inline-block;
+        vertical-align: middle;
+        background: $blue; 
+        background-clip: content-box;
+        padding: 5px;
+        position: relative;
+        overflow: hidden;
+        text-align: center;
+    }
+    
+    &__icon {
+        color: #fff;
+        font-size: 45px;
+        transform: translate(0%, 20%);
+    }
+    
 }

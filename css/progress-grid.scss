@@ -1,11 +1,23 @@
 .progress-grid {
+    text-align: justify;
     
      &__item {
         width: 44%;
         display: inline-block;
         
-        & + & {
-            margin-left: 10%;
+         &.faux {
+             width: 100%;
+    height: 0;
+         }
+         
+         & + & {
+            margin: 15px 0;
         }
+    }
+    
+    &:after {
+        content: '';
+        display: inline-block;
+        width: 100%;  
     }
 }

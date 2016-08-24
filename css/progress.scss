@@ -1,18 +1,22 @@
 .progress {
     
+    &_centered {
+        text-align: center;
+    }
+    
      &__title {
         text-transform: uppercase;
         display: block;
-        text-align: center;
         font-weight: 400;
         
         $font-size: 25px;
         font-size: $font-size;
-        margin: #{14px/$font-size}em 0;
+        margin: 0 0 #{14px/$font-size}em;
     }
     
     &__items {
         text-align: justify;
+        height: 18px;
         //white-space: nowrap;
         
         &:after {
@@ -39,12 +43,19 @@
     &__bar {
         background: #e6e6e6;
         height: 18px;
+        
+        &-inner {
+            height: 100%
+        }
             
-        &_active {
+        &-inner_active {
             position: relative;
             background: #3d6cb0;
-            height: 18px;
         }    
+    }
+    
+    & + & {
+        margin: 25px 0;
     }
 }
 

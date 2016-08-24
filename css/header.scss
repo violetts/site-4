@@ -1,8 +1,38 @@
 .header {
+    margin: 0 0 20px;
+    position: relative;
+    overflow: hidden;
 
-    &__avatar {
+    &__user-picture {
         margin: 0 0 4.832201792746865% 0;
     }
+    
+    &__title {
+        color: $black;
+        font-weight: 400;
+        margin: 0;
+        padding: 0;
+        text-transform: uppercase;  
+        
+        $font-size: 53px;
+        font-size: $font-size;
+        line-height: #{55px/$font-size};
+        
+        &_bigger {
+            font-weight: 600;
+            font-size: 62px;
+        }
+    }
+    
+    &__subtitle {
+        text-transform: uppercase;
+        color: $black;
+        font-weight: 600;
+        $font-size: 25px;
+        font-size: $font-size;
+        margin: 0 0 #{20px/$font-size}em 0;
+        line-height: #{40px/$font-size};
+    } 
 }
 
 

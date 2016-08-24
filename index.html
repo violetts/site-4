@@ -6,28 +6,28 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body class="page">
-    <header class="page__header clearfix">
-        <div class="section__header section__header_top">
-            <div class="header__avatar">
-                <div class="avatar__bigger">
-                    <img class="avatar__img" src="http://lorempixel.com/300/300/cats" alt="awesome cat">
+<body class="page clearfix">
+    <header class="page__header">
+        <div class="header">
+            <div class="header__user-picture">
+                <div class="user-picture">
+                    <img class="user-picture__img" src="http://lorempixel.com/300/300/cats" alt="awesome cat">
                 </div>
             </div>
-            <h1 class="section__title section__title_huge">Awesome</br>
-                <span class="section__title section__title_bigger">Kitten</span>
+            <h1 class="header__title">Awesome</br>
+                <span class="header__title header__title_bigger">Kitten</span>
             </h1>
-            <h2 class="section__subtitle">Graphic designer</h2>
+            <h2 class="header__subtitle">Graphic designer</h2>
         </div>
     </header>
-    <main class="page__content">
-        <div class="page__right clearfix">
+    <main class="page__content clearfix">
+        <div class="page__right">
             <section class="section">
                 <div class="section__header">
-                    <div class="avatar__smaller">
-                        <i class="avatar__icon fa fa-star" aria-hidden="true"></i>
-                    </div>
-                    <h2 class="section__title">Education</h2>
+                    <div class="section__avatar">
+                        <i class="section__icon fa fa-star" aria-hidden="true"></i>
+                    </div><!--      
+                --><h2 class="section__title">Education</h2>
                 </div>
                 <div class="section__description">
                     <article class="steps">
@@ -82,8 +82,8 @@
             </section>
             <section class="section">
                 <div class="section__header">
-                    <div class="avatar__smaller">
-                        <i class="avatar__icon fa fa-shopping-bag" aria-hidden="true"></i>
+                    <div class="section__avatar">
+                        <i class="section__icon fa fa-shopping-bag" aria-hidden="true"></i>
                     </div>
                     <h2 class="section__title">Experience</h2>
                 </div>
@@ -140,66 +140,75 @@
             </section>
             <section class="section">
                 <div class="section__header">
-                    <div class="avatar__smaller">
-                        <i class="avatar__icon fa fa-laptop" aria-hidden="true"></i>
+                    <div class="section__avatar">
+                        <i class="section__icon fa fa-laptop" aria-hidden="true"></i>
                     </div>
                     <h2 class="section__title">Software</h2>
                 </div>
                 <div class="section__description">
-                    <div class="progress-grid">
-                        <div class="progress-grid__item">
+                    <ul class="progress-grid">
+                        <li class="progress-grid__item">
                             <div class="progress">
                                 <h3 class="progress__title">Photoshop</h3>
                                 <div class="progress__bar">
-                                    <div class="progress__bar progress__bar_active" style="width: 90%"></div>
+                                    <div class="progress__bar-inner progress__bar-inner_active" style="width: 90%"></div>
                                 </div>
                             </div>
+                             </li>
+                        <li class="progress-grid__item">
                             <div class="progress">
                                 <h3 class="progress__title">Illustrator</h3>
                                 <div class="progress__bar">
-                                    <div class="progress__bar progress__bar_active" style="width: 60%"></div>
+                                    <div class="progress__bar-inner progress__bar-inner_active" style="width: 60%"></div>
                                 </div>
                             </div>
+                        </li>
+                        <li class="progress-grid__item">
                             <div class="progress">
                                 <h3 class="progress__title">Indesign</h3>
                                 <div class="progress__bar">
-                                    <div class="progress__bar progress__bar_active" style="width: 45%"></div>
+                                    <div class="progress__bar-inner progress__bar-inner_active" style="width: 45%"></div>
                                 </div>
                             </div>
-                        </div>
-                        <!--                
-                            -->
-                        <div class="progress-grid__item">
+                        </li>
+                        <li class="progress-grid__item">
                             <div class="progress">
                                 <h3 class="progress__title">Dreamweaver</h3>
                                 <div class="progress__bar">
-                                    <div class="progress__bar progress__bar_active" style="width: 80%"></div>
+                                    <div class="progress__bar-inner progress__bar-inner_active" style="width: 80%"></div>
                                 </div>
                             </div>
+                        </li>
+                        <li class="progress-grid__item">
                             <div class="progress">
                                 <h3 class="progress__title">Aftereffects</h3>
                                 <div class="progress__bar">
-                                    <div class="progress__bar progress__bar_active" style="width: 60%"></div>
+                                    <div class="progress__bar-inner progress__bar-inner_active" style="width: 60%"></div>
                                 </div>
                             </div>
+                        </li>
+                        <li class="progress-grid__item">
                             <div class="progress">
                                 <h3 class="progress__title">HTML & CSS</h3>
                                 <div class="progress__bar">
-                                    <div class="progress__bar progress__bar_active" style="width: 90%"></div>
+                                    <div class="progress__bar-inner progress__bar-inner_active" style="width: 90%"></div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
+                        </li>
+                        <li class="progress-grid__item faux">
+                        </li>
+                        
+                    </ul>
                 </div>
             </section>
         </div>
         <!--   
             -->
-        <div class="page__left clearfix">
+        <div class="page__left">
             <section class="section">
                 <div class="section__header">
-                    <div class="avatar__smaller">
-                        <i class="avatar__icon fa fa-user" aria-hidden="true"></i>
+                    <div class="section__avatar">
+                        <i class="section__icon fa fa-user" aria-hidden="true"></i>
                     </div>
                     <h2 class="section__title">Profile</h2>
                 </div>
@@ -210,8 +219,8 @@
             </section>
             <section class="section">
                 <div class="section__header">
-                    <div class="avatar__smaller">
-                        <i class="avatar__icon fa fa-phone" aria-hidden="true"></i>
+                    <div class="section__avatar">
+                        <i class="section__icon fa fa-phone" aria-hidden="true"></i>
                     </div>
                     <h2 class="section__title">Contact</h2>
                 </div>
@@ -238,13 +247,13 @@
             </section>
             <section class="section">
                 <div class="section__header">
-                    <div class="avatar__smaller">
-                        <i class="avatar__icon fa fa-lightbulb-o" aria-hidden="true"></i>
+                    <div class="section__avatar">
+                        <i class="section__icon fa fa-lightbulb-o" aria-hidden="true"></i>
                     </div>
                     <h2 class="section__title">Skills</h2>
                 </div>
                 <div class="section__description">
-                    <div class="progress">
+                    <div class="progress progress_centered">
                         <h3 class="progress__title">Creative</h3>
                         <ul class="progress__items">
                             <li class="progress__item"></li>
@@ -261,7 +270,7 @@
                             <li class="progress__item"></li>
                         </ul>
                     </div>
-                    <div class="progress">
+                    <div class="progress progress_centered">
                         <h3 class="progress__title">Teamwork</h3>
                         <ul class="progress__items">
                             <li class="progress__item"></li>
@@ -278,7 +287,7 @@
                             <li class="progress__item"></li>
                         </ul>
                     </div>
-                    <div class="progress">
+                    <div class="progress progress_centered">
                         <h3 class="progress__title">Innovative</h3>
                         <ul class="progress__items">
                             <li class="progress__item"></li>
@@ -295,7 +304,7 @@
                             <li class="progress__item"></li>
                         </ul>
                     </div>
-                    <div class="progress">
+                    <div class="progress progress_centered">
                         <h3 class="progress__title">Communication</h3>
                         <ul class="progress__items">
                             <li class="progress__item"></li>
