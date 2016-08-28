@@ -1,12 +1,12 @@
 .avatar {
     
     &__wrapper {
-        border: 1px solid #3d6cb0;
+        border: 1px solid $blue;
         border-radius: 50%;
         box-sizing: border-box;
         display: inline-block;
         vertical-align: middle;
-        background: #3d6cb0; 
+        background: $blue; 
         background-clip: content-box;
         position: relative;
         overflow: hidden;

@@ -1,3 +1,27 @@
+/* font-family: "MyriadProRegular"; */
+@font-face {
+  font-family: "MyriadProRegular";
+  src: url("../fonts/MyriadProRegular/MyriadProRegular.eot");
+  src: url("../fonts/MyriadProRegular/MyriadProRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/MyriadProRegular/MyriadProRegular.woff") format("woff"), url("../fonts/MyriadProRegular/MyriadProRegular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+/* font-family: "MyriadProBold"; */
+@font-face {
+  font-family: "MyriadProBold";
+  src: url("../fonts/MyriadProBold/MyriadProBold.eot");
+  src: url("../fonts/MyriadProBold/MyriadProBold.eot?#iefix") format("embedded-opentype"), url("../fonts/MyriadProBold/MyriadProBold.woff") format("woff"), url("../fonts/MyriadProBold/MyriadProBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+/* font-family: "MyriadProItalic"; */
+@font-face {
+  font-family: "MyriadProItalic";
+  src: url("../fonts/MyriadProItalic/MyriadProItalic.eot");
+  src: url("../fonts/MyriadProItalic/MyriadProItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/MyriadProItalic/MyriadProItalic.woff") format("woff"), url("../fonts/MyriadProItalic/MyriadProItalic.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
 h1,
 h2,
 h3,
@@ -24,12 +48,12 @@ ul {
 }
 
 .header {
-  margin: 0 0 20px;
+  margin: 0;
   position: relative;
   overflow: hidden;
 }
 .header__user-picture {
-  margin: 0 0 4.832201792746865% 0;
+  margin: 0 0 8% 0;
 }
 .header__title {
   color: #000;
@@ -37,12 +61,12 @@ ul {
   margin: 0;
   padding: 0;
   text-transform: uppercase;
-  font-size: 53px;
-  line-height: 1.03774;
+  font-size: 52px;
+  line-height: 1.05769;
 }
 .header__title_bigger {
   font-weight: 600;
-  font-size: 62px;
+  font-size: 58px;
 }
 .header__subtitle {
   text-transform: uppercase;
@@ -499,10 +523,10 @@ textarea {
 }
 
 .section {
-  padding: 30px 0;
+  padding: 0 0 36px;
 }
 .section__header {
-  margin: 0 0 20px -14px;
+  margin: 0 0 8px -14px;
   position: relative;
   overflow: hidden;
 }
@@ -517,7 +541,7 @@ textarea {
   position: absolute;
   top: calc(50% - 3px);
   z-index: -1;
-  left: 87px;
+  left: 88px;
 }
 .section__title {
   text-transform: uppercase;
@@ -525,7 +549,7 @@ textarea {
   display: inline;
   vertical-align: middle;
   font-weight: 600;
-  font-size: 41px;
+  font-size: 36px;
   padding: 0 2.95% 0 2%;
   background: #fff;
 }
@@ -557,18 +581,18 @@ textarea {
 }
 
 .table__section {
-  padding: 5.324183625177473% 0;
+  padding: 3.5% 0 0;
 }
 .table__title {
-  font-size: 20px;
-  width: 100px;
+  font-size: 18px;
+  width: 74px;
   color: #3d6cb0;
   text-transform: uppercase;
   font-weight: 600;
   display: inline-block;
 }
 .table__desc {
-  font-size: 20px;
+  font-size: 18px;
   color: #000;
   display: inline-block;
 }
@@ -584,25 +608,22 @@ textarea {
 }
 
 .steps {
-  padding: 0 0 0 9.449711783790594%;
+  padding: 3% 0 0 7.5%;
   position: relative;
 }
 .steps::before {
   content: '';
-  width: 18px;
-  height: 18px;
+  width: 20px;
+  height: 20px;
   border-radius: 50%;
-  background-color: #333;
+  background-color: #000;
   position: absolute;
-  top: 8px;
-  left: 3.7798847135162372%;
-}
-.steps + .steps {
-  margin-top: 22px;
+  top: 27px;
+  left: 0;
 }
 .steps__header {
   display: inline-block;
-  font-size: 25px;
+  font-size: 21px;
   position: relative;
 }
 .steps__title {
@@ -639,10 +660,11 @@ textarea {
   display: block;
   font-weight: 400;
   font-size: 25px;
-  margin: 0 0 0.56em;
+  margin: 0 0 0.3em;
 }
 .progress__items {
   text-align: justify;
+  padding: 0 30px;
   height: 18px;
 }
 .progress__items:after {
@@ -664,7 +686,7 @@ textarea {
 }
 .progress__bar {
   background: #e6e6e6;
-  height: 18px;
+  height: 23px;
 }
 .progress__bar-inner {
   height: 100%;
@@ -674,7 +696,7 @@ textarea {
   background: #3d6cb0;
 }
 .progress + .progress {
-  margin: 25px 0;
+  margin: 20px 0;
 }
 
 .clearfix:before, .clearfix:after {
@@ -689,9 +711,9 @@ textarea {
   max-width: 1122px;
   min-width: 960px;
   margin: 0 auto;
-  padding: 6.68% 0;
-  font-family: 'Myriad Pro Regular', sans-serif;
-  color: #333;
+  padding: 1% 0;
+  font-family: 'MyriadProRegular', sans-serif;
+  color: #000;
   font-size: 15px;
   line-height: 1.33333;
 }
@@ -699,17 +721,20 @@ textarea {
   width: 36.89%;
   float: left;
   text-align: center;
+  margin: 46px 0 44px;
 }
 .page__left {
   width: 36.89%;
-  padding: 0 3.3792155714253536%;
   box-sizing: border-box;
   float: left;
 }
 .page__right {
   float: right;
-  padding: 0 2.2558426324179623%;
+  padding: 25px 0 0;
   width: 56.59%;
+}
+.page__right .section {
+  padding: 0 0 60px;
 }
 
 .progress-grid {
@@ -724,7 +749,7 @@ textarea {
   height: 0;
 }
 .progress-grid__item + .progress-grid__item {
-  margin: 15px 0;
+  margin: 12px 0;
 }
 .progress-grid:after {
   content: '';
@@ -745,8 +770,8 @@ textarea {
   background-size: cover;
   background-repeat: no-repeat;
   background-clip: content-box;
-  width: 203px;
-  height: 203px;
+  width: 224px;
+  height: 224px;
   padding: 2.955665024630542%;
 }
 .user-picture__img {

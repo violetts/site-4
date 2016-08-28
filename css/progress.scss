@@ -8,14 +8,13 @@
         text-transform: uppercase;
         display: block;
         font-weight: 400;
-        
-        $font-size: 25px;
-        font-size: $font-size;
-        margin: 0 0 #{14px/$font-size}em;
+        font-size: 25px;
+        margin: 0 0 0.3em;
     }
     
     &__items {
         text-align: justify;
+        padding: 0 30px; //0.5scale
         height: 18px;
         //white-space: nowrap;
         
@@ -30,19 +29,19 @@
         display: inline-block;
         box-sizing: border-box;
         position: relative;
-        background-color: #3d6cb0;
+        background-color: $blue;
         width: 18px;
         height: 18px;
         border-radius: 50%;
     }
     
     &__item_active ~ &__item {
-        background-color: #e6e6e6;   
+        background-color: $grey;   
     }
     
     &__bar {
-        background: #e6e6e6;
-        height: 18px;
+        background: $grey;
+        height: 23px;
         
         &-inner {
             height: 100%
@@ -50,12 +49,12 @@
             
         &-inner_active {
             position: relative;
-            background: #3d6cb0;
+            background: $blue;
         }    
     }
     
     & + & {
-        margin: 25px 0;
+        margin: 20px 0;
     }
 }
 

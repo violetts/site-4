@@ -1,55 +1,55 @@
 .steps {
-    padding: 0 0 0 9.449711783790594%;
+    padding:3% 0 0 7.5%; // 0 0 0 9.449711783790594%; original
     position: relative;
-    
+
      &::before {
         content:'';
-        width: 18px;
-        height: 18px;
+        width: 20px;
+        height: 20px;
         border-radius: 50%;
-        background-color: #333;
+        background-color: $black;
         position: absolute;
-        top: 8px;
-        left: 3.7798847135162372%;
+        top: 27px; //8px;
+        left: 0; // 3.7798847135162372%; original
     }
-    
-    & + & {
-        margin-top: 22px;
-    }
-    
+
+//    & + & {
+//        margin-top: 22px; original
+//    }
+
     &__header {
         display: inline-block;
-        font-size: 25px;
+        font-size: 21px;
         position: relative;
     }
-    
+
     &__title {
-        color: #3d6cb0;
+        color: $blue;
         text-transform: uppercase;
         font-weight: 600;
         display: inline-block;
-        
+
         &_smaller {
             font-size: 25px;
             color: #333;
         }
     }
-    
+
     &__date-from:before {
         content: '//';
         display: inline-block;
         padding: 0 10px 0 15px;
     }
-    
+
     &__what {
         font-weight: 400;
         text-transform: uppercase;
     }
-    
+
     &__date-to {
         display: inline-block;
     }
-    
+
     &__date-from {
         display: inline-block;
     }

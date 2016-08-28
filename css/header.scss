@@ -1,10 +1,10 @@
 .header {
-    margin: 0 0 20px;
+    margin: 0;
     position: relative;
     overflow: hidden;
 
     &__user-picture {
-        margin: 0 0 4.832201792746865% 0;
+        margin: 0 0 8% 0; //0 0 4.832201792746865% 0;
     }
     
     &__title {
@@ -14,13 +14,13 @@
         padding: 0;
         text-transform: uppercase;  
         
-        $font-size: 53px;
+        $font-size: 52px;
         font-size: $font-size;
         line-height: #{55px/$font-size};
         
         &_bigger {
             font-weight: 600;
-            font-size: 62px;
+            font-size: 58px;
         }
     }
     

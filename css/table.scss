@@ -1,21 +1,21 @@
 .table {
-    
+
     &__section {
-        padding: 5.324183625177473% 0; //18px
+        padding: 3.5% 0 0; //5.324183625177473% 0; original
     }
 
     &__title {
-        font-size: 20px;
-        width: 100px;
-        color: #3d6cb0;
+        font-size: 18px;
+        width: 74px;
+        color: $blue;
         text-transform: uppercase;
         font-weight: 600;
         display: inline-block;
     }
 
     &__desc {
-        font-size: 20px;
-        color: #000;
+        font-size: 18px;
+        color: $black;
         display: inline-block;
     }
 }

@@ -1,22 +1,22 @@
 .list {
-    
+
     &__title {
         text-transform: uppercase;
         font-size: 20px;
         font-weight: 600;
     }
-    
+
     &__title_black {
-        color: #000;
+        color: $black;
     }
-    
+
     &__title_blue {
-        color: #3d6cb0;
+        color: $blue;
     }
-    
+
     &__subtitle {
         text-transform: uppercase;
         font-size: 20px;
-        color: #000;
+        color: $black;
     }
 }
