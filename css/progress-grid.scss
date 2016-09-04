@@ -1,18 +1,16 @@
 .progress-grid {
-    text-align: justify;
+    //text-align: justify;
+    margin: 0;
+    padding: 0;
 
      &__item {
-        width: 44%;
+        width: 48%;
         display: inline-block;
 
-         &.faux {
-             width: 100%;
-    height: 0;
-         }
 
-         & + & {
-            margin: 12px 0;
-        }
+         &:nth-child(2n) {
+             margin-left: 2%;
+         }
     }
 
     &:after {

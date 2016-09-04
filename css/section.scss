@@ -16,7 +16,7 @@
             content: '';
             width: 100%;
             height: 6px;
-            background: $blue;
+            background: $color-blue;
             position: absolute;
             top: calc(50% - 3px);
             z-index: -1;
@@ -26,14 +26,14 @@
 
      &__title {
         text-transform: uppercase;
-        color: $blue;
+        color: $color-blue;
         display: inline;
         vertical-align: middle;
         font-weight: 600;
         font-size: 36px; //41px original;
         padding: 0 2.95% 0 2%;
         background: #fff;
-
+        margin: 0;
     }
 
     &__description {
@@ -47,14 +47,14 @@
     }
 
      &__avatar {
-        border: 1px solid $blue;
+        border: 1px solid $color-blue;
         width: 78px;
         height: 78px;
         border-radius: 50%;
         box-sizing: border-box;
         display: inline-block;
         vertical-align: middle;
-        background: $blue;
+        background: $color-blue;
         background-clip: content-box;
         padding: 5px;
         position: relative;
@@ -63,8 +63,11 @@
     }
 
     &__icon {
+        position: relative;
         color: #fff;
         font-size: 45px;
-        transform: translate(0%, 20%);
+        transform: translate(0%, -50%);
+        left: 0;
+        top: 50%;
     }
 }

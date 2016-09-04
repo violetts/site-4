@@ -1,60 +1,62 @@
 .progress {
-    
+
     &_centered {
         text-align: center;
     }
-    
+
      &__title {
         text-transform: uppercase;
         display: block;
         font-weight: 400;
         font-size: 25px;
         margin: 0 0 0.3em;
+        padding: 0;
     }
-    
+
     &__items {
         text-align: justify;
-        padding: 0 30px; //0.5scale
+        padding: 0 7.248%;; //0.5scale
         height: 18px;
+        margin: 0;
         //white-space: nowrap;
-        
+
         &:after {
             content: '';
             display: inline-block;
             width: 100%;
         }
     }
-    
+
     &__item {
         display: inline-block;
         box-sizing: border-box;
         position: relative;
-        background-color: $blue;
+        background-color: $color-blue;
         width: 18px;
         height: 18px;
         border-radius: 50%;
     }
-    
+
     &__item_active ~ &__item {
-        background-color: $grey;   
+        background-color: $color-grey;
     }
-    
+
     &__bar {
-        background: $grey;
+        background: $color-grey;
         height: 23px;
-        
+
         &-inner {
             height: 100%
         }
-            
+
         &-inner_active {
             position: relative;
-            background: $blue;
-        }    
+            background: $color-blue;
+        }
     }
-    
+
     & + & {
-        margin: 20px 0;
+        margin-top: 20px;
     }
 }
 

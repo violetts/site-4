@@ -22,24 +22,6 @@
   font-style: normal;
   font-weight: normal;
 }
-h1,
-h2,
-h3,
-h4 {
-  margin: 0;
-  padding: 0;
-}
-
-h2 {
-  font-weight: 400;
-  font-size: 25px;
-}
-
-ul {
-  margin: 0;
-  padding: 0;
-}
-
 .container {
   max-width: 1122px;
   min-width: 600px;
@@ -64,7 +46,11 @@ ul {
   font-size: 52px;
   line-height: 1.05769;
 }
-.header__title_bigger {
+.header__title-bigger {
+  color: #000;
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
   font-weight: 600;
   font-size: 58px;
 }
@@ -73,25 +59,7 @@ ul {
   color: #000;
   font-weight: 600;
   font-size: 25px;
-  margin: 0 0 0.8em 0;
   line-height: 1.6;
-}
-
-.list__title {
-  text-transform: uppercase;
-  font-size: 20px;
-  font-weight: 600;
-}
-.list__title_black {
-  color: #000;
-}
-.list__title_blue {
-  color: #3d6cb0;
-}
-.list__subtitle {
-  text-transform: uppercase;
-  font-size: 20px;
-  color: #000;
 }
 
 /*! normalize.css v4.1.1 | MIT License | github.com/necolas/normalize.css */
@@ -552,6 +520,7 @@ textarea {
   font-size: 36px;
   padding: 0 2.95% 0 2%;
   background: #fff;
+  margin: 0;
 }
 .section__description p {
   margin: 0;
@@ -575,26 +544,35 @@ textarea {
   text-align: center;
 }
 .section__icon {
+  position: relative;
   color: #fff;
   font-size: 45px;
-  transform: translate(0%, 20%);
+  transform: translate(0%, -50%);
+  left: 0;
+  top: 50%;
 }
 
 .table__section {
-  padding: 3.5% 0 0;
+  margin: 0;
+}
+.table__section + .table__section {
+  margin-top: 3.5%;
 }
 .table__title {
   font-size: 18px;
-  width: 74px;
+  width: 114px;
   color: #3d6cb0;
   text-transform: uppercase;
   font-weight: 600;
   display: inline-block;
+  margin: 0;
+  padding: 0;
 }
 .table__desc {
   font-size: 18px;
   color: #000;
   display: inline-block;
+  margin: 0;
 }
 
 .description__list {
@@ -625,12 +603,15 @@ textarea {
   display: inline-block;
   font-size: 21px;
   position: relative;
+  padding: 0;
+  margin: 0;
 }
 .steps__title {
   color: #3d6cb0;
   text-transform: uppercase;
   font-weight: 600;
   display: inline-block;
+  margin: 0;
 }
 .steps__title_smaller {
   font-size: 25px;
@@ -661,11 +642,13 @@ textarea {
   font-weight: 400;
   font-size: 25px;
   margin: 0 0 0.3em;
+  padding: 0;
 }
 .progress__items {
   text-align: justify;
-  padding: 0 30px;
+  padding: 0 7.248%;
   height: 18px;
+  margin: 0;
 }
 .progress__items:after {
   content: '';
@@ -696,23 +679,15 @@ textarea {
   background: #3d6cb0;
 }
 .progress + .progress {
-  margin: 20px 0;
-}
-
-.clearfix:before, .clearfix:after {
-  content: " ";
-  display: table;
-}
-.clearfix:after {
-  clear: both;
+  margin-top: 20px;
 }
 
 .page {
   max-width: 1122px;
   min-width: 960px;
   margin: 0 auto;
-  padding: 1% 0;
-  font-family: 'MyriadProRegular', sans-serif;
+  padding: 1% 4%;
+  font-family: "MyriadProRegular", sans-serif;
   color: #000;
   font-size: 15px;
   line-height: 1.33333;
@@ -738,18 +713,15 @@ textarea {
 }
 
 .progress-grid {
-  text-align: justify;
+  margin: 0;
+  padding: 0;
 }
 .progress-grid__item {
-  width: 44%;
+  width: 48%;
   display: inline-block;
 }
-.progress-grid__item.faux {
-  width: 100%;
-  height: 0;
-}
-.progress-grid__item + .progress-grid__item {
-  margin: 12px 0;
+.progress-grid__item:nth-child(2n) {
+  margin-left: 2%;
 }
 .progress-grid:after {
   content: '';

@@ -7,27 +7,26 @@
         width: 20px;
         height: 20px;
         border-radius: 50%;
-        background-color: $black;
+        background-color: $color-black;
         position: absolute;
         top: 27px; //8px;
         left: 0; // 3.7798847135162372%; original
     }
 
-//    & + & {
-//        margin-top: 22px; original
-//    }
-
     &__header {
         display: inline-block;
         font-size: 21px;
         position: relative;
+        padding: 0;
+        margin: 0;
     }
 
     &__title {
-        color: $blue;
+        color: $color-blue;
         text-transform: uppercase;
         font-weight: 600;
         display: inline-block;
+        margin: 0;
 
         &_smaller {
             font-size: 25px;
